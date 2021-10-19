@@ -1,0 +1,8 @@
+CREATE TABLE geomtable (
+gid serial PRIMARY KEY,
+geom geometry)
+
+INSERT INTO geomtable(geom) VALUES (ST_GeomFromGeoJSON('{"type" : "Polygon",
+"coordinates" : [[[-2.5162124633789067, 34.88787589057115],
+[-2.516899108886719, 34.88696062580312],
+[-2.515665292739868, 34.887752682446184]]]}'))
